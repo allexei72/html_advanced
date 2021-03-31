@@ -1,0 +1,9 @@
+@mixin vertical-mid {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+}
