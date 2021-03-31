@@ -1,23 +1,12 @@
+@import "variables";
+
+@import "helpers";
+
+@import "reset";
+
+@import "footer";
+
 body {
   background-color: orange;
 }
 
-.blog {
-  @include vertical-mid();
-}
-
-.news {
-  @include vertical-mid();
-}
-
-.list1 {
-  @extend %flex-center;
-}
-
-.list2 {
-  @extend %flex-center;
-}
-
-.list3 {
-  @extend %flex-center;
-}
