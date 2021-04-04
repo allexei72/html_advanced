@@ -1,0 +1,16 @@
+.header,
+.main {
+  width: calc(100%-$sidebar-width);
+  margin-left: $sidebar-width;
+}
+
+.header {
+  height: $header-height;
+  border-bottom: 1 solid $default-border-color;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  
+}
