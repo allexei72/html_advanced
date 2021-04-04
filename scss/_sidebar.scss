@@ -15,13 +15,13 @@
     display: block;
   }
 
-  a {
+  .menu_leve1 {
     text-decoration: none;
-    border-bottom: 1px solid #eee;
     padding: 16px 24px;
     display: block;
     color: #3B3D40;
     font-size: 16px;
+    border-bottom: 1px solid #eee;
 
     &:hover {
       color: #F59A2C;
@@ -32,16 +32,19 @@
 
 .sidebar_submenu {
   display: none;
-  position: absolute;
+  background: #F9F9F9;
 
   &:hover {
     display: block;
   }
 
-  a {
+  .menu_level2 {
     display: block;
     color: #3B3D40;
     font-size: 12px;
     padding: 5px 24px;
+    text-decoration: none;
+    color: #838D8F;
   }
 }
+
