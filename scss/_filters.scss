@@ -1,0 +1,44 @@
+.filter-blur {
+  filter: blur(5px);
+}
+
+.filter-grayscale {
+  filter: grayscale(100%); //0% - 100%
+}
+
+.filter-contrast {
+  filter: contrast(200%); // 0% +++
+}
+
+.filter-sepia {
+  filter: sepia(); // 0-100%
+}
+
+.filter-drop-shadow {
+  filter: drop-shadow(1px -1px 3px #000); //
+}
+
+.filter-hue-rotate {
+  filter: hue-rotate(90deg); //0deg -360 deg
+}
+
+.filter-brightness {
+  filter: brightness(0.3);
+}
+
+.filter-opacity {
+  filter: opacity(0.4);
+}
+
+.filter-saturate {
+  filter: saturate(0); // 0% -100%
+}
+
+.filter-invert {
+  filter: invert(100%); // 0-100%
+}
+
+.filter-url {
+  filter: url(0);
+}
+
