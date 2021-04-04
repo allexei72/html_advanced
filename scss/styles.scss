@@ -1,12 +1,39 @@
 @import "variables";
-
 @import "helpers";
-
 @import "reset";
-
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
 @import "footer";
+@import "filters";
+@import "gradients";
+@import "sidebar";
+@import "header";
 
-body {
-  background-color: orange;
+.img {
+  max-width: 100%;
+  height: auto;
 }
 
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+.main {
+  flex: 1;
+}
+
+.section + .section {
+  margin-top: 80px;
+}
+
+.section_title {
+  font-weight: 600;
+  font-size: 56px;
+  color: #333333;
+  border-bottom: 1px solid #0D3268;
+  padding-bottom: 21px;
+  margin-bottom: 35px;
+  margin-left: 52px;
+}
