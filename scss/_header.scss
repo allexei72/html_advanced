@@ -1,16 +1,43 @@
 .header,
 .main {
-  width: calc(100%-$sidebar-width);
+  width: calc(100% - #{$sidebar-width});
   margin-left: $sidebar-width;
 }
 
 .header {
   height: $header-height;
-  border-bottom: 1 solid $default-border-color;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  border-bottom: 1px solid $default-border-color;  
 }
 
 .search-box {
+  position: relative;
+  width: 275px;
+  height: 42px;
+  margin: 27px 55px;
+
+  input {
+    width: 275px;
+    height: 42px;
+    border-radius: 20px;
+    border: 1px solid $default-border-color;
+    color: $default-border-color;
+    padding-left: 20px;
+  }
+
+  & :hover {
+    color: blue;
+  }
+
+  a {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    margin-right: 15px;
+  }
   
+  svg {
+    height: 13px;
+    fill: $default-border-color;
+  }
 }
+
