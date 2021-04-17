@@ -1,3 +1,4 @@
+
 .header,
 .main {
   width: calc(100% - #{$sidebar-width});
@@ -5,8 +6,11 @@
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   height: $header-height;
   border-bottom: 1px solid $default-border-color;  
+  align-items: center;
 }
 
 .search-box {
@@ -22,9 +26,18 @@
     border: 1px solid $default-border-color;
     color: $default-border-color;
     padding-left: 20px;
+
+    &::placeholder {
+      color:$default-border-color;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 3px 3px #000;
+    }
   }
 
-  & :hover {
+  &:hover {
     color: blue;
   }
 
@@ -38,6 +51,23 @@
   svg {
     height: 13px;
     fill: $default-border-color;
+  }
+}
+
+.preview_links {
+  margin-right: 33px;
+
+  ul {
+    display: flex;
+    align-items: baseline;
+  }
+
+  li {
+    margin-left: 33px;
+  }
+
+  &:hover {
+    fill: #F59A2C;
   }
 }
 

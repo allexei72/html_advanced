@@ -1,40 +1,30 @@
-@import "variables";
-@import "helpers";
-@import "reset";
+@import "../node_modules/breakpoint-sass/stylesheets/breakpoint";
 @import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
-@import "footer";
-@import "filters";
-@import "gradients";
-@import "sidebar";
-@import "header";
+@import "base/variables";
+@import "helpers/helpers";
+@import "base/reset";
+@import "base/global-style";
+@import "base/ratio";
+@import "base/box";
 
-.img {
-  max-width: 100%;
-  height: auto;
-}
+@import "layout/section";
 
-.main-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
+@import "components/filters";
+@import "components/forms";
+@import "components/gradients";
+@import "components/transform";
+@import "components/transition";
 
+/*
+@import "base";
 
-.main {
-  flex: 1;
-}
+@import "layout";
 
-.section + .section {
-  margin-top: 80px;
-}
+@import "components";
 
-.section_title {
-  font-weight: 600;
-  font-size: 56px;
-  color: #333333;
-  border-bottom: 1px solid #0D3268;
-  padding-bottom: 21px;
-  margin-bottom: 35px;
-  margin-left: 52px;
-}
+@import "vendor";
 
+@import "pages";
+
+@import "theme";
+*/

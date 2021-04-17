@@ -1,0 +1,47 @@
+@function coef-to-percentage($coef) {
+  @return $coef *100%;
+
+}
+@function font($font-file) {
+ // @return url($fonts-path + "/" + $font-file);
+  $final-url: "";
+  @if $font-file {
+    $final-url: $fonts-path + "/" + $font-file;
+  }
+
+  //@else {
+   // $file-url: "";
+ // }
+
+  @return url($final-url);
+}
+
+@function image($image-file) {
+  @return url($images-path + "/" + $image-file);
+}
+
+
+
+
+@mixin vertical-mid {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+}
+
+//=========================
+
+$font-weights: (
+  "light": 300,
+  "normal": 400,
+  "medium": 500,
+  "semibold":600,
+  "bold": 700,
+  "black": 900
+);
+
+

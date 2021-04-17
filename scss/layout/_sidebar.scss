@@ -7,7 +7,7 @@
   padding-top: 102px;
 
   ul {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #BCBCBC;
     position: relative;
   }
   
@@ -21,7 +21,8 @@
     display: block;
     color: #3B3D40;
     font-size: 16px;
-    border-bottom: 1px solid #eee;
+    font-family: 'open_sansregular';
+    border-bottom: 1px solid #BCBCBC;
 
     &:hover {
       color: #F59A2C;
@@ -42,9 +43,15 @@
     display: block;
     color: #3B3D40;
     font-size: 12px;
+    font-family: 'open_sansregular';
     padding: 5px 24px;
     text-decoration: none;
     color: #838D8F;
+
+    &:hover {
+      color: #F59A2C;
+      border-left: 3px solid #F59A2C;
+    }
   }
 }
 

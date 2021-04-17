@@ -1,0 +1,44 @@
+.rotio-box {
+  position: relative;
+
+
+  &::after {
+    content: '';
+    padding-top: 56.25%;
+    display: block;
+    //display: inline;
+  }
+
+  @include breakpoint(orientation portrait) {
+    &::after {
+      padding-top: 100%;
+    }
+  }
+
+  > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+  img,
+  video,
+  iframe {
+    object-fit: cover;
+  }
+}
+
+@include breakpoint($desktop) {
+
+}
+
+
+
+
+
+// 1:1 this padding-top:100%
+// 16:9 this pading-top:56,25% (9/16)*100%
+
