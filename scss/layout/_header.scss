@@ -33,7 +33,7 @@
 
     &:focus {
       outline: none;
-      box-shadow: 0 0 3px 3px #000;
+      box-shadow: 0 0 3px 3px #bcbcbc;
     }
   }
 
@@ -66,8 +66,8 @@
     margin-left: 33px;
   }
 
-  &:hover {
-    fill: #F59A2C;
+  svg:hover {
+    box-shadow: 0 0 3px 3px#F59A2C;
   }
 }
 

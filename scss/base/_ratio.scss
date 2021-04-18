@@ -1,17 +1,36 @@
 .rotio-box {
   position: relative;
 
-
   &::after {
     content: '';
-    padding-top: 56.25%;
     display: block;
+    //padding-top: 56.25%;
     //display: inline;
   }
-
+  
   @include breakpoint(orientation portrait) {
     &::after {
       padding-top: 100%;
+    }
+  }
+
+  @include breakpoint (orientation landscape) {
+    &::after {
+      padding-top: 56.25%;
+    }
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    @include breakpoint (orientation portrait) {
+      &::after {
+        padding-top: 150%;
+      }
+    }
+    @include breakpoint(orientation landscape) {
+      &::after {
+        padding-top: 62.5%;
+      }
     }
   }
 
@@ -30,14 +49,6 @@
     object-fit: cover;
   }
 }
-
-@include breakpoint($desktop) {
-
-}
-
-
-
-
 
 // 1:1 this padding-top:100%
 // 16:9 this pading-top:56,25% (9/16)*100%
