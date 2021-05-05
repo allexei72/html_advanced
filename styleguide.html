@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/select2/dist/css/select2.css">
+  <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="node_modules/tippy.js/dist/tippy.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <section class="section" id="tooltips">
+    <h2 class="section_title">Tooltips</h2>
+    <div class="section_content">
+      <div class="d-flex flex-wrap">
+      <button class="tooltip-button">I have tooltip</button>
+      </div>
+    </div>
+  </section>      
+  <section class="section" id="slider">
+    <h2 class="section_title">Slider</h2>
+    <div class="section_content">
+      <div class="d-flex flex-wrap">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="http://unsplash.it/1000/500" alt=""></div>
+          <div class="swiper-slide"><img src="http://unsplash.it/1000/500" alt=""></div>
+          <div class="swiper-slide"><img src="http://unsplash.it/1000/500" alt=""></div>
+          <div class="swiper-slide"><img src="http://unsplash.it/1000/500" alt=""></div>
+          <div class="swiper-slide"><img src="http://unsplash.it/1000/500" alt=""></div>
+          <div class="swiper-slide"><img src="http://unsplash.it/1000/500" alt=""></div>
+          <div class="swiper-slide"><img src="http://unsplash.it/1000/500" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+      </div> 
+    </div>   
+  </section>
+  <section class="section" id="filters">
+    <h2 class="section_title">Filters</h2>
+    <div class="section_content">
+      <div class="d-flex flex-wrap">
+        <div class="col-3" id="filter-blur"><div class="ratio-box"><img class="filter-blur" src="img/001.jpg" alt=""></div></div>
+        <div class="col-3" id="filter-grayscale"><div class="ratio-box"><img class="filter-grayscale"  src="img/001.jpg" alt=""></div></div>
+        <div class="col-3" id="filter-contrast"><div class="ratio-box"><img class="filter-contrast"  src="img/001.jpg" alt=""></div></div>
+        <div class="col-3" id="filter-sepia"><div class="ratio-box"><img class="filter-sepia"  src="img/001.jpg" alt=""></div></div>
+        <div class="col-3" id="filter-drop-shadow"><div class="ratio-box"><img class="filter-drop-shadow"  src="img/001.jpg" alt=""></div></div>
+        <div class="col-3" id="filter-hue-rotate"><div class="ratio-box"><img class="filter-hue-rotate"  src="img/001.jpg" alt=""></div></div>
+        <div class="col-3" id="filter-brightness"><div class="ratio-box"><img class="filter-brightness"  src="img/001.jpg" alt=""></div></div>
+        <div class="col-3" id="filter-opacity"><div class="ratio-box"><img class="filter-opacity"  src="img/001.jpg" alt=""></div></div>
+        <div class="col-3" id="filter-invert"><div class="ratio-box"><img class="filter-invert"  src="img/001.jpg" alt=""></div></div>
+        <div class="col-3" id="filter-saturate"><div class="ratio-box"><img class="filter-saturate"  src="img/001.jpg" alt=""></div></div>
+        <div class="col-3" id="filter-url"><div class="ratio-box"><img class="filter-url"  src="img/001.jpg" alt=""></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" class="ratio-box" id="gradients">
+    <h2 class="section_title">Gradients</h2>
+    <div class="section_content">
+      <div class="d-flex flex-wrap">
+        <div class="col-6"> <div class="gradient-box gradient-box-1"></div></div>
+        <div class="col-6"> <div class="gradient-box gradient-box-2"></div></div>
+        <div class="col-6"> <div class="gradient-box gradient-box-3"></div></div>
+        <div class="col-6"> <div class="gradient-box gradient-box-4"></div></div>
+        <div class="col-6"> <div class="gradient-box gradient-box-5"></div></div>
+        <div class="col-6"> <div class="gradient-box gradient-box-6"></div></div>
+        <div class="col-6"> <div class="gradient-box gradient-box-7"></div></div>
+        <div class="col-6"> <div class="gradient-box gradient-box-8"></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="section" class="ratio-box" id="transform">
+    <h2 class="section_title">Transform</h2>
+    <div class="section_content_transform">       
+      <div class="scene">
+        <div class="cube">
+          <div class="cube__face cube__face--front">front</div>
+          <div class="cube__face cube__face--back">back</div>
+          <div class="cube__face cube__face--right">right</div>
+          <div class="cube__face cube__face--left">left</div>
+          <div class="cube__face cube__face--top">top</div>
+          <div class="cube__face cube__face--bottom">bottom</div>
+        </div>
+        <p class="radio-group">
+          <label>
+            <input type="radio" name="rotate-cube-side" value="front" checked /> front
+          </label>
+          <label>
+            <input type="radio" name="rotate-cube-side" value="right" /> right
+          </label>
+          <label>
+            <input type="radio" name="rotate-cube-side" value="back" /> back
+          </label>
+          <label>
+            <input type="radio" name="rotate-cube-side" value="left" /> left
+          </label>
+          <label>
+            <input type="radio" name="rotate-cube-side" value="top" /> top
+          </label>
+          <label>
+            <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+          </label>
+        </p>   
+      </div>
+      <div class="scene_2 scene--card">
+        <div class="card">
+          <div class="card__face card__face--front">front</div>
+          <div class="card__face card__face--back">back</div>
+        </div>
+          <p>Click card to flip.</p>
+      </div>              
+    </div> 
+  </section>
+  <section class="section" class="ratio-box" id="forms">
+    <h2 class="section_title">Forms</h2>
+    <div class="section_content">
+      <h1 class="forms_text">Dropdown example</h1>
+      <div class="dropdown-wrapper">
+        <input type="checkbox" class="dropdown-input" id="dropdown-example" name="dropdown-example">
+        <label for="dropdown-example" class="dropdown-button" tabindex="0">Click me</label>
+      <div class="drowpdown-content">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </div>
+      </div>
+      <h1 class="forms_text">Card selector</h1>
+      <div class="cards-list">
+        <input type="radio" class="card-input card-input-1" name="card-inputs" id="card-input-1">
+        <input type="radio" class="card-input card-input-2" name="card-inputs" id="card-input-2">
+        <input type="radio" class="card-input card-input-3" name="card-inputs" id="card-input-3">
+        <input type="radio" class="card-input card-input-4" name="card-inputs" id="card-input-4">
+        <label for="card-input-1" class="card-radio card-radio-1">Card-content 1</label>
+        <label for="card-input-2" class="card-radio card-radio-2">Card-content2</label>
+        <label for="card-input-3" class="card-radio card-radio-3">Card-content3</label>
+        <label for="card-input-4" class="card-radio card-radio-4">Card-content4</label>            
+      </div>
+      <h1 class="forms_text">Checkbox and Radio</h1>
+      <div>
+        <input type="checkbox" name="checkbox-ex" id="checkbox-ex">
+        <label for="checkbox-ex" class="checkbox-label">
+      <div class="checkbox-box">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+        <path d="M3.556 14.222l-3.556 3.556 10.667 10.667 21.333-21.333-3.556-3.556-17.778 17.778-7.111-7.111z"></path>
+        </svg>
+      </div>
+        <span class="checkbox-text">Checkbox</span>
+        </label>
+      </div>
+      <h1 class="forms_text">Simple select</h1>
+      <div class="simple-select">
+        <select name="select" id=""> 
+          <option value="1">Own</option>
+          <option value="2">Tho</option>
+          <option value="3">Three</option>
+        </select> 
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="simple-select__arrow" width="28" height="32" viewBox="0 0 28 32">
+        <path d="M12.939 23.842l-12.146-12.146c-0.586-0.586-0.586-1.536 0-2.121l1.417-1.417c0.585-0.585 1.533-0.586 2.119-0.002l9.672 9.626 9.672-9.626c0.586-0.583 1.534-0.582 2.119 0.002l1.417 1.417c0.586 0.586 0.586 1.536 0 2.121l-12.146 12.146c-0.586 0.586-1.536 0.586-2.121 0z"></path>
+        </svg>
+      </div>
+      <select class="full-select js-full-select" name="select-box">
+        <option value="1">Own</option>
+        <option value="2">Tho</option>
+        <option value="3">Three</option>
+      </select> 
+      <div class="forms">
+      <div class="forms_content">
+        <form action="">
+          <hr>
+          <label for="Name">Name</label>
+          <input type="name" name="name" id="i_1" class="nm_1" required>
+            <hr>
+            <label for="password">Password</label>
+            <input type="password" id="i_2" class="nm_2">
+            <hr>
+            <textarea name="" id="i_3" class="nm_3" cols="30" rows="10">Text</textarea>
+            <button class="btn" id="btn_3">Push</button>
+        </form>
+      </div>
+      <div class="forms_content">
+        <hr>
+        <div class="simpl_sel">
+          <select name="sel" id="sel" class="sel"> 
+            <option value="1">Styart</option>
+            <option value="2">Bob</option>
+            <option value="3">Greey</option>
+          </select> 
+          <hr>
+          <label class="container">One
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>  
+          <hr>
+          <label class="container_radio">Radio one
+            <input type="radio"  name="radio">
+            <span class="checkmark_radio"></span>
+          </label>
+          <hr>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          <hr>
+          <div class="cards_list">
+            <input type="radio" class="card_input card_input_1" name="card_inputs" id="card_input_1">
+            <input type="radio" class="card_input card_input_2" name="card_inputs" id="card_input_2">
+            <label for="card_input_1" class="card_radio card_radio_1"><img src="img/002.jpg" alt=""></label>
+            <label for="card_input_2" class="card_radio card_radio_2"><img src="img/002.jpg" alt=""></label>          
+          </div>
+        </div>
+     </div>
+    </div> 
+  </section> 
+  <section class="section" class="ratio-box" id="transition">
+    <h2 class="section_title">Transition</h2>
+    <div class="section_content"> 
+      <h1 class="forms_text">Transition</h1> 
+      <div class="transition-area">
+        <div class="transition-child"></div>
+      </div>
+      <h1 class="forms_text">Animation</h1>
+      <div class="animation-area">
+        <div class="animation-child"></div>
+      </div>
+      <h1 class="forms_text">Transition-timing-function</h1>
+      <div class="tim-fun" id="tim-fun_1">linear</div>
+      <div class="tim-fun" id="tim-fun_2">ease</div>
+      <div class="tim-fun" id="tim-fun_3">ease-in</div>
+      <div class="tim-fun" id="tim-fun_4">ease-out</div>
+      <div class="tim-fun" id="tim-fun_5">ease-in-out</div>
+      <h1 class="forms_text">Snake</h1>
+      <div class="animation-snake">
+        <div class="animation-snake_child">
+          <img src="img/snake.svg" alt="">
+      </div>
+    </div>
+  </section>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+  <script src="node_modules/swiper/swiper-bundle.js"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="node_modules/tippy.js/dist/tippy.umd.min.js"></script>
+  <script src="js/component-scripts.js"></script>
+</body>
+</html>

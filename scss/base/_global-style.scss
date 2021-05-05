@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@each $key, $value in $font-weights {
+  .font-weight--#{$key} {
+    font-weight: $value;
+  }
+}
+

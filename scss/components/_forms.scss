@@ -1,0 +1,363 @@
+.dropdown-wrapper {
+  margin-bottom: 20px;
+}
+
+.dropdown-input {
+  visibility: hidden;
+  position: absolute;
+  pointer-events: none;
+  margin-bottom: 10px;
+
+  &:checked ~ .drowpdown-content {
+    max-height: 100px;
+  }
+}
+
+.drowpdown-content {
+  display: none;
+  transition: height 1s;
+  height: 0;
+  overflow: hidden;
+}
+
+.dropdown-button {
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 10px;
+  display: inline-block;
+}
+
+.forms_text {
+  margin-bottom: 10px;
+  font-family: 'open_sansregular';
+  color: #0D3268;
+}
+
+///---------------------------------------
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.card-radio {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #ccc;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.card-input {
+  visibility: hidden;
+  position: absolute;
+  pointer-events: none;
+}
+
+.card-input-1:checked ~ .card-radio-1,
+.card-input-2:checked ~ .card-radio-2,
+.card-input-3:checked ~ .card-radio-3,
+.card-input-4:checked ~ .card-radio-4 {
+  opacity: 1;
+}
+
+///-------------------------------------------
+
+input[type="checkbox"],
+input[type="radio"] {
+  visibility: hidden;
+  position: absolute;
+  pointer-events: none;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-box {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ccc;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4px;
+  fill: #fff;
+
+  svg {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+  }
+}
+
+input[type="checkbox"]:checked ~ .checkbox-label {
+  .checkbox-box {
+    background-color: green;
+  }
+
+  svg {
+    display: block;
+  }
+}
+
+///----------------------------------------------------
+
+.simple-select {
+  position: relative;
+  margin: 10px 0 20px;
+
+  select {
+    border: 2px solid #bcbcbc;
+    padding: 7px 24px 7px 14px ;
+    width: 100%;
+    appearance: none;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+}
+
+.simple-select__arrow {
+  position: absolute;
+  width: 12px;
+  height: 10px;
+  top: 50%;
+  right: 10px;
+  fill: #bcbcbc;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.forms {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.forms_content {
+  width: 400px;
+  height: 350px;
+  background-color: #ccc;
+  border: 3px solid;
+  padding: 10px;
+  border-radius: 6px;
+
+  .nm_1 {
+    margin-left: 23px;
+  }
+
+  .nm_3 {
+    width: 100%;
+  }
+}
+
+.sel {
+  width: 200px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: 'open_sansregular';
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: white;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+// radio..................
+
+.container_radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: 'open_sansregular';
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+
+.checkmark_radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container_radio:hover input ~ .checkmark_radio {
+  background-color: #ccc;
+}
+
+.container_radio input:checked ~ .checkmark_radio {
+  background-color: #2196F3;
+}
+
+.checkmark_radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container_radio input:checked ~ .checkmark_radio:after {
+  display: block;
+}
+
+.container_radio .checkmark_radio:after {
+  top: 9px;
+ left: 9px;
+ width: 8px;
+ height: 8px;
+ border-radius: 50%;
+ background: white;
+}
+
+/// Rounded slider 
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 34px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F5F5DC;;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+///--------------------------------
+
+.cards_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card_radio {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 80px;
+  margin-right: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.card_input {
+  visibility: hidden;
+  position: absolute;
+  pointer-events: none;
+}
+
+.card_input_1:checked ~ .card_radio_1,
+.card_input_2:checked ~ .card_radio_2 {
+  opacity: 1;
+}

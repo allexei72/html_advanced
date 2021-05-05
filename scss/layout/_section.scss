@@ -1,0 +1,23 @@
+.section {
+  margin-left: 50px;
+}
+
+.section + .section {
+  margin-top: 80px;
+  
+}
+
+.section_title {
+  font-weight: 600;
+  font-size: 56px;
+  font-family: 'open_sansregular';
+  color: #333333;
+  border-bottom: 1px solid #0D3268;
+  padding-bottom: 21px;
+  margin-bottom: 35px;
+  margin-right: 200px;
+}
+
+h1 {
+  font-family: 'open_sansregular';
+}
