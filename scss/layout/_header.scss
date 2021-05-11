@@ -66,8 +66,12 @@
     margin-left: 33px;
   }
 
-  svg:hover {
-    box-shadow: 0 0 3px 3px#F59A2C;
+  a {
+    display: block;
+  
+    &:hover path {
+      stroke: #F59A2C;
+    }
   }
 }
 

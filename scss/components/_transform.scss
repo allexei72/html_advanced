@@ -118,3 +118,83 @@
   background: blue;
   transform: rotateY(180deg);
 }
+
+/////////////////////////////////
+.door {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+
+.scene_3 {
+  display: flex;
+  width: 140px;
+  height: 180px;
+  margin: 20px 20px;
+  border: 3px solid #F59A2C;
+  box-shadow: 0 0 10px;
+}
+
+.scene_card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  background-color: #0d7490;
+  
+  
+}
+
+.card_door {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 170px;
+  color: white;
+  text-align: center;
+  font-family: 'open_sansregular';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card_1:hover {
+  transform: translateX(2em);
+}
+
+.card_2:hover {
+  transform: translateY(2em);
+}
+
+.card_3:hover {
+  transform: translate3d(15px, 15px, 15px);
+}
+
+.card_4:hover {
+  transform: scale3d(1.5, 1.2, 0.3);
+}
+
+.card_5:hover {
+  transform: scaleX(0.5);
+}
+
+.card_6:hover {
+  transform: scaleY(0.5);
+}
+
+.card_7:hover {
+  transform: skewX(30deg);
+}
+
+.card_8:hover {
+  transform: skewY(30deg);
+}
+
+.card_9:hover {
+  transform: translateX(10px) rotate(10deg) translateY(5px);
+}
+
+.card_10:hover {
+  transform: perspective(200px) rotateY(50deg);
+}

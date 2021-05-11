@@ -9,6 +9,7 @@ jQuery(document).ready(function() {
         pagination: {
           el: '.swiper-pagination',
         },
+        
       
         // Navigation arrows
         navigation: {

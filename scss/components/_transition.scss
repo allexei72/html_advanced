@@ -25,10 +25,10 @@
   position: absolute;
   top: 0;
   left: 0;
-//  transition-property: left;
-//  transition-duration: 1s;
-//  transition-timing-function: linear;
-//  transition-delay: 1s;
+//transition-property: left;
+//transition-duration: 1s;
+//transition-timing-function: linear;
+//transition-delay: 1s;
   transition: left 1s linear 1s, background 500ms linear 2s, opacity 1s linear 1500ms;
 }
 
@@ -80,14 +80,15 @@
   height: 50px;
   background-image: linear-gradient(180deg, red, yellow);
   position: absolute;
-  //animation-name: sasha;
+  //animation-name: sasha2;
   //animation-duration: 1s;
-  // animation-iteration-count: infinite;
-  // animation-direction: alternate;
+  //animation-iteration-count: infinite;
+  //animation-direction: alternate;
   animation: sasha 1s infinite alternate;
 }
 
 //transition-timing-function
+
 .tim-fun {
   position: relative;
   width: 70px;
@@ -106,20 +107,20 @@
   }
 }
 
-.tim-fun_1 {
-  transition-timing-function:linear;
+#tim-fun_1 {
+  transition-timing-function: linear;
 }
-.tim-fun_2 {
-  transition-timing-function:ease;
+#tim-fun_2 {
+  transition-timing-function: ease;
 }
-.tim-fun_3 {
-  transition-timing-function:ease-in;
+#tim-fun_3 {
+  transition-timing-function: ease-in;
 }
-.tim-fun_4 {
-  transition-timing-function:ease-out;
+#tim-fun_4 {
+  transition-timing-function: ease-out;
 }
-.tim-fun_5 {
-  transition-timing-function:ease-in-out;
+#tim-fun_5 {
+  transition-timing-function: ease-in-out;
 }
 
 //Animation snake
